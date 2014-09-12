@@ -1,0 +1,21 @@
+\documentclass{article}
+
+\begin{document}
+
+<<echo=FALSE>>=
+  library(xtable)
+  source('data.R')
+@
+Lets plot some $\alpha$-shizzle.
+<<results='asis'>>=
+  xtable(table)
+@
+
+
+<<echo=FALSE>>=
+  plot(table)
+@
+
+
+
+\end{document}
